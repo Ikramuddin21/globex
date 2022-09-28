@@ -5,35 +5,399 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Globex</title>
-    <link rel="icon" type="image/x-icon" href="./images/header/logo.png" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- favicon icon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/header/logo.png"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/slick/slick-theme.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="logo-area">
-          <img src="./images/header/logo.png" alt="" />
+      <div class="header-wrapper">
+        <nav class="nav">
+          <div class="logo-area">
+            <a href="#">
+              <img src="./assets/images/header/logo.png" alt="" />
+            </a>
+          </div>
+          <ul class="header-lists">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+          <div class="header-right">
+            <form class="header-form">
+              <input type="text" placeholder="Search here" />
+              <button class="search-icon">
+                <img src="./assets/images/header/search.png" alt="" />
+              </button>
+            </form>
+            <div class="header-icons-area">
+              <img
+                class="like-icon"
+                src="./assets/images/header/like.png"
+                alt=""
+              />
+              <img
+                class="cart-icon"
+                src="./assets/images/header/shopping-cart.png"
+                alt=""
+              />
+              <img
+                class="user-img"
+                src="./assets/images/header/user.png"
+                alt=""
+              />
+              <span>Anne Doe</span>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- link bar -->
+      <div class="link-bar">
+        <div>
+          <p>Invite Friends and get 50% off on your next purchase</p>
+          <p class="invite-now"><a href="#">Invite Now</a></p>
         </div>
-        <ul class="header-lists">
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="#">Kids</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-        <div class="header-right">
-          <form class="header-form">
-            <input type="text" placeholder="Search here" />
-            <button class="search-icon"><img src="./images/header/search.png" alt="" /></button>
-          </form>
-          <div class="header-icons-area">
-            <img class="like-icon" src="./images/header/like.png" alt="" />
-            <img class="cart-icon" src="./images/header/shopping-cart.png" alt="" />
-            <img class="user-img" src="./images/header/user.png" alt="" />
-            <span>Anne Doe</span>
+        <img class="close-icon" src="./assets/images/header/close.png" alt="" />
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero-container">
+      <div id="hero-carousel" class="single-item">
+        <div class="carousel-item">
+          <div class="hero-carousel-left">
+            <img src="https://i.ibb.co/j6ZY7NR/hero-img.jpg" alt="" />
+          </div>
+          <div class="hero-carousel-right">
+            <img class src="https://i.ibb.co/2PMK32z/prada.png" alt="" />
+            <div>
+              <h2 class="hero-subtitle">Big Fashion Festival</h2>
+              <h2>50% - 80% off</h2>
+            </div>
+            <button class="shared-btn">Explore</button>
           </div>
         </div>
-      </nav>
-    </header>
+        <div class="carousel-item">
+          <div class="hero-carousel-left">
+            <img src="https://i.ibb.co/j6ZY7NR/hero-img.jpg" alt="" />
+          </div>
+          <div class="hero-carousel-right">
+            <img class src="https://i.ibb.co/2PMK32z/prada.png" alt="" />
+            <div>
+              <h2 class="hero-subtitle">Big Fashion Festival</h2>
+              <h2>50% - 80% off</h2>
+            </div>
+            <button class="shared-btn">Explore</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-carousel-left">
+            <img src="https://i.ibb.co/j6ZY7NR/hero-img.jpg" alt="" />
+          </div>
+          <div class="hero-carousel-right">
+            <img class src="https://i.ibb.co/2PMK32z/prada.png" alt="" />
+            <div>
+              <h2 class="hero-subtitle">Big Fashion Festival</h2>
+              <h2>50% - 80% off</h2>
+            </div>
+            <button class="shared-btn">Explore</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-carousel-left">
+            <img src="https://i.ibb.co/j6ZY7NR/hero-img.jpg" alt="" />
+          </div>
+          <div class="hero-carousel-right">
+            <img class src="https://i.ibb.co/2PMK32z/prada.png" alt="" />
+            <div>
+              <h2 class="hero-subtitle">Big Fashion Festival</h2>
+              <h2>50% - 80% off</h2>
+            </div>
+            <button class="shared-btn">Explore</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-carousel-left">
+            <img src="https://i.ibb.co/j6ZY7NR/hero-img.jpg" alt="" />
+          </div>
+          <div class="hero-carousel-right">
+            <img class src="https://i.ibb.co/2PMK32z/prada.png" alt="" />
+            <div>
+              <h2 class="hero-subtitle">Big Fashion Festival</h2>
+              <h2>50% - 80% off</h2>
+            </div>
+            <button class="shared-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tranding now section -->
+    <section class="tranding-container">
+      <h2 class="section-title">Tranding Now</h2>
+      <div class="tranding-responsive">
+        <div class="tranding-carousel-item">
+          <div class="tranding-img-area">
+            <img src="./assets/images/tranding/image1.jpg" alt="" />
+          </div>
+          <div class="tranding-text-area">
+            <h4>Womens Denim Jacket</h4>
+            <div class="brand-name-star">
+              <h5>Brand Name</h5>
+              <span>
+                4.4
+                <img src="./assets/images/tranding/star.png" alt="" />
+              </span>
+            </div>
+            <div class="price-area">
+              <h4>Rs. 700</h4>
+              <span class="past-price">Rs. 1000</span>
+              <span class="percentage">(30% off)</span>
+            </div>
+          </div>
+        </div>
+        <div class="tranding-carousel-item">
+          <div class="tranding-img-area">
+            <img src="./assets/images/tranding/image2.jpg" alt="" />
+          </div>
+          <div class="tranding-text-area">
+            <h4>Womens Denim Jacket</h4>
+            <div class="brand-name-star">
+              <h5>Brand Name</h5>
+              <span>
+                4.4
+                <img src="./assets/images/tranding/star.png" alt="" />
+              </span>
+            </div>
+            <div class="price-area">
+              <h4>Rs. 700</h4>
+              <span class="past-price">Rs. 1000</span>
+              <span class="percentage">(30% off)</span>
+            </div>
+          </div>
+        </div>
+        <div class="tranding-carousel-item">
+          <div class="tranding-img-area">
+            <img src="./assets/images/tranding/image3.jpg" alt="" />
+          </div>
+          <div class="tranding-text-area">
+            <h4>Womens Denim Jacket</h4>
+            <div class="brand-name-star">
+              <h5>Brand Name</h5>
+              <span>
+                4.4
+                <img src="./assets/images/tranding/star.png" alt="" />
+              </span>
+            </div>
+            <div class="price-area">
+              <h4>Rs. 700</h4>
+              <span class="past-price">Rs. 1000</span>
+              <span class="percentage">(30% off)</span>
+            </div>
+          </div>
+        </div>
+        <div class="tranding-carousel-item">
+          <div class="tranding-img-area">
+            <img src="./assets/images/tranding/image4.jpg" alt="" />
+          </div>
+          <div class="tranding-text-area">
+            <h4>Womens Denim Jacket</h4>
+            <div class="brand-name-star">
+              <h5>Brand Name</h5>
+              <span>
+                4.4
+                <img src="./assets/images/tranding/star.png" alt="" />
+              </span>
+            </div>
+            <div class="price-area">
+              <h4>Rs. 700</h4>
+              <span class="past-price">Rs. 1000</span>
+              <span class="percentage">(30% off)</span>
+            </div>
+          </div>
+        </div>
+        <div class="tranding-carousel-item">
+          <div class="tranding-img-area">
+            <img src="./assets/images/tranding/image2.jpg" alt="" />
+          </div>
+          <div class="tranding-text-area">
+            <h4>Womens Denim Jacket</h4>
+            <div class="brand-name-star">
+              <h5>Brand Name</h5>
+              <span>
+                4.4
+                <img src="./assets/images/tranding/star.png" alt="" />
+              </span>
+            </div>
+            <div class="price-area">
+              <h4>Rs. 700</h4>
+              <span class="past-price">Rs. 1000</span>
+              <span class="percentage">(30% off)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- deals section -->
+    <section class="deals-container">
+      <h2 class="section-title">Deals of the day</h2>
+      <div class="deals-responsive">
+        <div class="deals-carousel-item">
+          <div class="deals-img-area">
+            <img src="./assets/images/deals/image1.jpg" alt="" />
+          </div>
+          <div class="deals-text-area">
+            <img src="./assets/images/levis.jpg" alt="" />
+            <div class="best-style-price">
+              <h3>Best of Styles</h3>
+              <h4>Under Rs. 799</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="deals-carousel-item">
+          <div class="deals-img-area">
+            <img src="./assets/images/deals/image2.jpg" alt="" />
+          </div>
+          <div class="deals-text-area">
+            <img src="./assets/images/levis.jpg" alt="" />
+            <div class="best-style-price">
+              <h3>Best of Styles</h3>
+              <h4>Under Rs. 799</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="deals-carousel-item">
+          <div class="deals-img-area">
+            <img src="./assets/images/deals/image3.jpg" alt="" />
+          </div>
+          <div class="deals-text-area">
+            <img src="./assets/images/levis.jpg" alt="" />
+            <div class="best-style-price">
+              <h3>Best of Styles</h3>
+              <h4>Under Rs. 799</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="deals-carousel-item">
+          <div class="deals-img-area">
+            <img src="./assets/images/deals/image1.jpg" alt="" />
+          </div>
+          <div class="deals-text-area">
+            <img src="./assets/images/levis.jpg" alt="" />
+            <div class="best-style-price">
+              <h3>Best of Styles</h3>
+              <h4>Under Rs. 799</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- trending offers section -->
+    <section class="offers-container">
+      <h2 class="section-title offers-title">Trending Offers</h2>
+      <div class="offers-responsive">
+        <div class="offers-carousel-item item-1">
+          <div class="offers-text-area">
+            <img src="./assets/images/levis.jpg" alt="" />
+            <div>
+              <h2>Min 60% off</h2>
+              <button class="shared-btn">Explore</button>
+            </div>
+          </div>
+          <div class="offers-img-area">
+            <img src="./assets/images/trending-offers/image1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="offers-carousel-item item-2">
+          <div class="offers-text-area">
+            <img src="./assets/images/levis.jpg" alt="" />
+            <div>
+              <h2>Min 60% off</h2>
+              <button class="shared-btn">Explore</button>
+            </div>
+          </div>
+          <div class="offers-img-area">
+            <img src="./assets/images/trending-offers/image2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="offers-carousel-item item-3">
+          <div class="offers-text-area">
+            <img
+              class="forever-img"
+              src="./assets/images/trending-offers/forever.jpg"
+              alt=""
+            />
+            <div>
+              <h2>Min 60% off</h2>
+              <button class="shared-btn">Explore</button>
+            </div>
+          </div>
+          <div class="offers-img-area">
+            <img src="./assets/images/trending-offers/image1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- forever -->
+    <section class="forever-container">
+      <div class="forever-wrapper">
+        <img src="./assets/images/forever2.png" alt="">
+        <div>
+          <h3 class="forever-big-fashion">Big Fashion Festival</h3>
+          <h3 class="forever-price">70% - 80% off</h3>
+        </div>
+        <button class="shared-btn">Explore</button>
+      </div>
+    </section>
+
+    <!-- slick slider -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./assets/js/slick/slick.min.js"
+    ></script>
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
