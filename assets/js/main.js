@@ -108,6 +108,7 @@ const dealsCarousel = () => {
         ]
     });
 };
+
 const offersCarousel = () => {
     $('.offers-responsive').slick({
         dots: false,
@@ -142,7 +143,42 @@ const offersCarousel = () => {
     });
 };
 
+const testimonialsCarousel = () => {
+    $('.testimonials-responsive').slick({
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+};
+
 heroCarousel();
 trandingCarousel();
 dealsCarousel();
 offersCarousel();
+testimonialsCarousel();
