@@ -1,31 +1,3 @@
-// const displayHeroCarousel = items => {
-//     const heroCarouselDiv = document.getElementById("hero-carousel");
-//     items.forEach(item => {
-//         heroCarouselDiv.innerHTML = `
-//         <div class="carousel-item">
-//             <div class="hero-carousel-left">
-//                 <img src=${item.imgMain} alt="" />
-//             </div>
-//             <div class="hero-carousel-right">
-//                 <img class src=${item.imgPrada} alt="" />
-//                 <div>
-//                     <h2 class="hero-subtitle">${item.subtitle}</h2>
-//                     <h2>${item.price}</h2>
-//                 </div>
-//                 <button class="shared-btn">Explore</button>
-//             </div>
-//         </div>
-//         `;
-//     });
-// };
-
-// const loadDataHeroCarousel = async () => {
-//     const res = await fetch("data.json");
-//     const data = await res.json();
-//     displayHeroCarousel(data.heroCarousel);
-
-// };
-
 const heroCarousel = () => {
     $('.single-item').slick({
         dots: true,
@@ -148,7 +120,7 @@ const testimonialsCarousel = () => {
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
             {
