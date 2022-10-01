@@ -6,8 +6,8 @@ const heroCarousel = () => {
         autoplay: true,
         speed: 1000,
         autoplaySpeed: 1500,
+        arrows: false
     });
-    // loadDataHeroCarousel();
 };
 
 const trandingCarousel = () => {
@@ -17,9 +17,10 @@ const trandingCarousel = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+        arrows: false,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1300,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
@@ -40,9 +41,6 @@ const trandingCarousel = () => {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
 };
@@ -54,6 +52,7 @@ const dealsCarousel = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -84,68 +83,25 @@ const dealsCarousel = () => {
 const offersCarousel = () => {
     $('.offers-responsive').slick({
         dots: false,
-        infinite: false,
         speed: 500,
-        slidesToShow: 1,
         slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: false
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
+        slidesToShow: 1,
+        initialSlide: 1,
+        centerMode: true,
+        centerPadding: "360px"
+      });
 };
 
 const testimonialsCarousel = () => {
     $('.testimonials-responsive').slick({
         dots: false,
-        infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: false
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+        initialSlide: 1,
+        initialSlide: 0,
+        centerMode: true,
+        centerPadding: "35px",
     });
 };
 

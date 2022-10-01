@@ -218,10 +218,19 @@ button {
   overflow: hidden;
 }
 
+.tranding-container .slick-track {
+  padding-bottom: 20px;
+}
+
 .tranding-carousel-item {
   background: #ffffff;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  transition: box-shadow 0.4s;
+}
+
+.tranding-carousel-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
 }
 
 .tranding-carousel-item.slick-slide {
@@ -306,14 +315,23 @@ button {
 /* deals styles */
 .deals-container {
   margin-left: 50px;
-  margin-top: 80px;
+  margin-top: 60px;
   overflow: hidden;
+}
+
+.deals-container .slick-track {
+  padding-bottom: 20px;
 }
 
 .deals-carousel-item {
   background: #ffffff;
   box-shadow: 0px 0px 30px rgba(165, 165, 165, 0.07);
   border-radius: 10px;
+  transition: box-shadow 0.4s;
+}
+
+.deals-carousel-item:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .deals-carousel-item.slick-slide {
@@ -352,7 +370,7 @@ button {
 
 /* trending offers styles */
 .offers-container {
-  margin-top: 80px;
+  margin-top: 60px;
   overflow: hidden;
 }
 
@@ -360,33 +378,69 @@ button {
   margin-left: 50px;
 }
 
+.offers-container .slick-prev,
+.offers-container .slick-next {
+  z-index: 11;
+}
+
+.offers-container .slick-prev {
+  left: 10px;
+}
+
+.offers-container .slick-next {
+  right: 40px;
+}
+
+.offers-container .slick-prev::before {
+  opacity: 1;
+  content: url("../images/left-arrow.png");
+}
+
+.offers-container .slick-next::before {
+  opacity: 1;
+  content: url("../images/right-arrow.png");
+}
+
+.offers-container .slick-list {
+  height: 600px;
+  display: grid;
+  place-items: center;
+}
+
+.offers-container .slick-track {
+  display: flex;
+  gap: 200px;
+}
+
 .offers-carousel-item {
   display: flex !important;
   align-items: center !important;
-  background: #f8f8f8;
+  background: #ffffff;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
-.offers-carousel-item.slick-slide {
-  margin-right: 70px;
-  max-width: 900px;
-  height: 400px;
+.offers-carousel-item.slick-slide.slick-center {
+  transition: 0.5s;
+}
+
+.offers-carousel-item.slick-slide.slick-center {
+  transform: scale(1.3);
 }
 
 .offers-text-area {
-  width: 45%;
+  width: 48%;
   text-align: center;
   display: grid;
   place-items: center;
 }
 
 .offers-text-area img {
-  width: 175px;
+  width: 150px;
 }
 
 .forever-img {
-  width: 275px !important;
+  width: 220px !important;
 }
 
 .offers-text-area > div {
@@ -395,18 +449,19 @@ button {
 
 .offers-text-area h2 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 38px;
   line-height: 60px;
   margin-bottom: 39px;
   color: #272727;
 }
 
 .offers-img-area {
-  width: 55%;
+  width: 52%;
 }
 
 .offers-img-area img {
   width: 100%;
+  height: 400px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -510,7 +565,6 @@ button {
 /* testimonials styles */
 .testimonials-container {
   margin-top: 80px;
-  margin-bottom: 80px;
   overflow: hidden;
 }
 
@@ -518,19 +572,49 @@ button {
   margin-left: 50px;
 }
 
+.testimonials-container .slick-prev,
+.testimonials-container .slick-next {
+  z-index: 11;
+}
+
+.testimonials-container .slick-prev {
+  left: 10px;
+}
+
+.testimonials-container .slick-next {
+  right: 40px;
+}
+
+.testimonials-container .slick-prev::before {
+  opacity: 1;
+  content: url("../images/left-arrow.png");
+}
+
+.testimonials-container .slick-next::before {
+  opacity: 1;
+  content: url("../images/right-arrow.png");
+}
+
+.testimonials-container .slick-list {
+  height: 470px;
+  display: grid;
+  place-items: center;
+}
+
+.testimonials-container .slick-track {
+  display: flex;
+  gap: 80px;
+}
+
 .testimonials-carousel-item {
-  background: #fafafa;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  width: 760px !important;
   padding: 58px 32px;
   display: grid !important;
   place-items: center !important;
-}
-
-.testimonials-carousel-item.slick-slide {
-  max-width: 600px !important;
-  height: 476px;
-  margin-right: 62px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .testimonials-carousel-item .stars-area {
@@ -552,7 +636,7 @@ button {
 
 /* footer */
 .footer {
-  /* height: 610px; */
+  margin-top: 80px;
   color: #ffffff;
   background: #00071b;
 }
@@ -637,7 +721,7 @@ button {
 }
 
 .footer hr {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .footer-bottom {
