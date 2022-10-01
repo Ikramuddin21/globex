@@ -1,3 +1,27 @@
+const headerWrapper = document.querySelector(".header-wrapper");
+const headerLists = document.querySelector(".header-lists");
+const headerRight = document.querySelector(".header-right");
+const menuIcon = document.querySelector(".menu-icon");
+const closeIcon = document.querySelector(".menu-close-icon");
+
+const showMenu = () => {
+    headerLists.classList.add("show-nav-item");
+    headerRight.classList.add("show-nav-item");
+    headerWrapper.classList.add("header-mobile-bg");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+};
+
+const hideMenu = () => {
+    headerLists.classList.remove("show-nav-item");
+    headerRight.classList.remove("show-nav-item");
+    headerWrapper.classList.remove("header-mobile-bg");
+    menuIcon.style.display = "block";
+    closeIcon.style.display = "none";
+};
+
+
+// slick slider
 const heroCarousel = () => {
     $('.single-item').slick({
         dots: true,
@@ -28,14 +52,14 @@ const trandingCarousel = () => {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 1000,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 650,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -55,7 +79,7 @@ const dealsCarousel = () => {
         arrows: false,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -63,14 +87,7 @@ const dealsCarousel = () => {
                 }
             },
             {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
+                breakpoint: 700,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -88,8 +105,16 @@ const offersCarousel = () => {
         slidesToShow: 1,
         initialSlide: 1,
         centerMode: true,
-        centerPadding: "360px"
-      });
+        centerPadding: "360px",
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    centerPadding: "0"
+                }
+            }
+        ]
+    });
 };
 
 const testimonialsCarousel = () => {
@@ -98,10 +123,16 @@ const testimonialsCarousel = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide: 1,
-        initialSlide: 0,
         centerMode: true,
         centerPadding: "35px",
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    centerPadding: "0"
+                }
+            }
+        ]
     });
 };
 
